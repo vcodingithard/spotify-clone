@@ -1,0 +1,410 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    
+}
+.main{
+    display: flex;
+    flex-direction: row;
+
+}
+.nav{
+    position:fixed;
+    height: 4rem;
+    width: 100%;
+    padding: 0.5rem 0 0 0.5rem ;
+    z-index: 10;
+}
+.sidebar{
+    position:absolute;
+    top: 5.5rem;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    height: 74.5vh;
+    width: 19rem;
+    z-index: 5;
+    opacity: 1;
+
+}
+.lib{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 0.5rem;
+    padding:0.5rem;
+}
+.libimg{
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right:0.5rem;
+}
+.lib .inend{
+    margin-left:auto ;
+}
+.playlist{
+    background-color: #1a1919;
+    margin:1rem 0.5rem;
+    color: white;
+    padding:1rem;
+    border-radius:1rem ;
+}
+.playlist p{
+    opacity: 0.7;   
+}
+.maincontent{
+    position: fixed;
+    top: 5rem;
+    left: 20rem;
+    height: 79vh;
+    border-radius: 2rem;
+    margin-left: 10px;
+    background-color:  #1a1919;
+    overflow: auto;
+}
+.musicplayer{
+    position:absolute;
+    bottom: 0;
+    padding: 1rem;
+    height: 4rem;
+    width: 100%;
+    z-index: 9;
+}
+.nav-options{
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center ;
+    margin-top: 0.5rem;
+    background-color: #000000;
+
+    
+}
+
+.forms,.signup,.logo{
+font-size: large;
+   
+}
+.hov{
+opacity: 0.7;
+color: white;   
+}
+.hov:hover{
+    color: white;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#search{
+    height: 2rem;
+    text-align: start;
+    width: 20rem;
+    opacity: 0.7;
+    border-radius: 1rem;
+}
+#search:hover{
+    opacity: 1;
+}
+button{
+    border-radius: 0.5rem ;
+    font-size: 1rem;
+    border: 0.01rem solid white;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0.3rem;
+    background-color: inherit; 
+}
+.new:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+}
+button:hover{
+    transform: scale(1.1);
+}
+.signup{
+    display: flex;
+    gap: 1rem 1rem;
+    background-color:#1a1919;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1.25rem;
+}
+.large{
+    font-size: larger;
+    margin-top: 0.45rem;
+    margin-left: 0.25rem;
+}
+.forms{
+    font-size: 1.3rem;
+    background-color: #1a1919;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    
+}
+.forms button,i,label,input{
+    margin-left: 0.5rem;
+}
+
+.circle{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+    border: 0.05rem solid rgba(255, 255, 255,0.4) ;
+    border-radius: 50%;
+}
+.circle:hover{
+    transform: scale(1.125);
+    border: 1px solid white;
+}
+.nocircle{
+    height: 3rem;
+    width: 3rem;
+    border: 0.05rem solid rgba(255, 255, 255,0.4) ;
+    margin-left: 1rem;
+}
+
+.nocircle:hover{
+    transform: scale(1.125);
+    border: 1px solid white;
+}
+
+
+@media(max-width:1000px){
+    .pos{
+        display: none;
+    }
+
+}
+.player{
+    display: flex;
+    color: #fff;
+    flex-direction: row;
+    background-color: #000000;
+    justify-content: space-between;
+    padding: 0.35rem;
+}
+
+.items-music{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    font-size: 1.rem;
+    padding:0rem 0.5rem;
+    align-items: center;
+}
+
+.range::-webkit-slider-runnable-track{
+    height: 0.2rem;
+    appearance: none;
+    background-color: rgb(59, 56, 56);
+}
+.range::-webkit-slider-thumb{
+    margin-top: -0.345rem;
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius:50% ;
+    background-color:rgb(13, 194, 97) ;
+}
+.range{
+    appearance: none;
+    
+}
+.songname{
+    color: white;
+    background-color: rgb(13, 12, 12);
+    height: 3rem;
+    border-radius: 1rem;
+}
+.operations{
+    background-color: rgb(13,12,13);
+    padding-right:0.5rem ;
+    border-radius: 1rem;
+    height: 3rem;
+
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(13, 12, 12);
+    padding: 0.35rem;
+    border-radius: 1rem;
+    height: 3rem;
+    margin-top: -0.4rem;
+}
+.playericons{
+    height: 1rem;
+    width: 1rem;
+    border: 0.05rem solid rgba(255, 255, 255,0.1) ;
+    margin-left: 1rem;   
+   
+}
+.col{
+margin-top:-0.7rem ;
+}
+.playtime{
+    width: 25rem;
+}
+*{
+    transition: all 0.3s;
+}
+
+.cat{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: flex-start;
+}
+
+.forcards{
+    display: flex;
+    padding-right: 1rem;
+    color: #fff;
+    flex-direction:row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 3rem 3rem;
+    justify-content: space-evenly;
+}
+.card{
+    width: 12rem;
+    height: 16rem;
+    border-radius: 1rem;
+    font-size: small;
+    border: 1px solid rgb(41, 40, 40) ;
+    box-shadow: 0 0 0.1rem; 
+}
+
+.card img{
+    height: 80%;
+    width: 100%;
+    border-radius:1rem  1rem  0 0 ;
+    
+}
+.card p{
+    text-align: center;
+    margin: 0.5rem;  
+}
+.card:hover{
+    transform: scale(1.05);
+
+}
+.imgplayer img{
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top:20rem;
+    left: 13rem;
+    opacity: 1;
+}
+.playericon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0rem;
+}
+.translate .fix{
+    height: 2rem;
+    width: 2rem;
+    opacity: 0;
+}
+.translate{
+    display: flex;
+
+}
+
+
+.card:hover{
+    .fix{
+        opacity: 1;
+    }
+    
+}
+.realfooter{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top:9rem ;
+    padding-bottom:2rem ;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: white;
+    text-transform: capitalize;
+}
+.items a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+}
+.items a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+.footerdesc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.insta{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem ;
+    margin-top: 2rem;
+}
+.copy{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 7rem;
+    justify-content: flex-start;
+    grid-gap: 1rem ;
+
+}
+.copy p{
+    justify-content: flex-end;
+}
+#end{
+   margin-left: auto;
+}
+
+.footerline{
+    height: 1px;
+    width: 92%;
+    background-color: rgba(255, 255, 255,0.4);
+    margin-top: 2rem;
+    overflow: hidden;
+    margin:auto;
+    margin-top: 5rem;
+   
+}
+ .maincontent::-webkit-scrollbar{
+    appearance: none;
+    width: 1rem;
+    background-color: #212020;
+ }
+ .maincontent::-webkit-scrollbar-thumb{
+    appearance: none;
+    border-radius: 1rem;
+    background-color:rgb(97, 95, 95);
+
+}
+ @media(max-width:1000px){
+    .operations{
+        display: none;
+    }
+    .time,.songname{
+        margin: auto;
+    }
+
+ }
+ h2:hover{
+    text-decoration: underline;
+ }
