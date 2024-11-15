@@ -1,15 +1,4 @@
 # spotify-clone
 
-this is demo
+this is my first website.
 
-# spotify-clone
-
-this is demo
-
-# spotify-clone
-
-this is demo
-
-# spotify-clone
-
-this is demo
